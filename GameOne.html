@@ -1,0 +1,29 @@
+<html>
+  <head>
+  
+  </head>
+  <body>
+    <script>
+function playGame() {
+//Ask player one for a number between 1 and 4
+var p1 = prompt("Player One, pick a number between 1 and 4");
+//Ask player two for a number between 1 and 4
+var p2 = prompt("Player Two, pick a number between 1 and 4");
+//Scold players if they entered a number outside of the range then end the game
+if ((p1 < 1 || p1 > 4) || (p2 < 1 || p2 > 4)){
+  window.alert("One of you cheated you dickheads :( GET THE FUCK OUT OF MY GAME!!!");
+  return;
+  }
+//IF the player one and player two number are the same, say everone wins
+if (p1 === p2){
+  window.alert("YYAAAYYY YOU BOTH WON :)");
+  }
+//ELSE tell boht players what they chose, and why they are losers
+else {
+  window.alert("You both are losers lloolll Player one choose " + p1 + " and player choose "+ p2)
+  }
+}
+   </script>
+   <button onclick="playGame()">PLAY MY GAME DUDES</button>
+  </body>
+</html>
